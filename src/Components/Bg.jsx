@@ -1,4 +1,4 @@
-import BG from "../assets/Animation - 1726047777260.json";
+import BG from "../assets/Bg.json";
 import Lottie from 'react-lottie';
 
 function Bg()
