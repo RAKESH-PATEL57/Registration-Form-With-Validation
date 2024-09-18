@@ -1,22 +1,10 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
+// import { useState } from "react";
 
 function Heading(props)
 {
 
-    const[condition,setCondition] = useState(true);
-
-    function changeName()
-    {
-        setCondition(!condition);
-    }
-
-    function changing()
-    {
-        props.toggle;
-        changeName();
-    }
     
     return(
         
@@ -26,7 +14,7 @@ function Heading(props)
                 <h1>Create</h1>
                 <h1>your account</h1>
             </div>
-            <p className="sub-heading">Already a member? <button onClick={changing}>{condition ? "Log In": "Sign In"}</button></p>
+            <p className="sub-heading">Already a have an Account ? <button onClick={ props.toggle}>Log In</button></p>
         </div>
     );
 }
